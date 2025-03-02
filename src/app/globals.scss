@@ -1,0 +1,19 @@
+@import '@/styles/colors';
+
+body {
+  color: $font-default;
+  background: $background-white;
+  font-family: var(--font-roboto-condensed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

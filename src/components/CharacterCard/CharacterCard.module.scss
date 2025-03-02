@@ -1,0 +1,73 @@
+@import '@/styles/media-breakpoints';
+@import '@/styles/colors';
+
+$cut-width: 12.86px;
+
+.characterCardContainer {
+  // min-width: 172.5px;
+  // height: 246px;
+
+  background-color: $background-black;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - $cut-width),
+    calc(100% - $cut-width) 100%,
+    0 100%
+  );
+
+  .image {
+    // width: 172.5px;
+    // height: 246px;
+    width: auto;
+    height: auto;
+  }
+
+  .middleBar {
+    // position: sticky;
+    height: 5.38px;
+    // background-color: $marvel-red;
+    transition: height 0.5s ease;
+    background: $marvel-red;
+    background-size: 10px 0;
+  }
+
+  .bottomContainer {
+    // position: relative;
+    height: 56px;
+    padding: 16px 16px 24px;
+    color: $font-white;
+
+    // background-color: $marvel-red;
+    // background: $marvel-red;
+    // background-position: 0 0;
+    // background-size: 100% 100%;
+
+    // transition: background-position 0.5s ease; /* Transición suave del fondo */
+
+    // &:hover {
+    //   //   height: 100px;
+    //   //   background-color: $marvel-red;
+    //   //   background: linear-gradient(to bottom, $marvel-red, $marvel-red);
+    //   background-position: 100px 100px;
+    //   //   background: linear-gradient(to bottom, black, #feb47b);
+    // }
+
+    // .blackBackground {
+    //   position: absolute;
+    //   bottom: 0;
+    //   background-color: $background-black;
+    //   height: 56px;
+    // }
+    transition: background 0.5s ease;
+  }
+
+  &:hover {
+    // .middleBar {
+    //   height: 61px;
+    // }
+    .bottomContainer {
+      background: $marvel-red;
+    }
+  }
+}

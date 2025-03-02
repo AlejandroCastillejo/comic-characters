@@ -1,0 +1,28 @@
+@import '@/styles/media-breakpoints';
+@import '@/styles/colors';
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  background-color: $background-black;
+  padding: 16px 48px;
+
+  .favoritesSelect {
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+    span {
+      color: $font-white;
+      font-size: 16px;
+    }
+  }
+}
+
+@include screen-sm {
+  .headerContainer {
+    padding: 16px;
+  }
+}

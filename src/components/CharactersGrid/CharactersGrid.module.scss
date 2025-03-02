@@ -1,0 +1,8 @@
+.charactersGridContainer {
+  max-width: 1512px;
+  padding: 48px;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(172, 1fr));
+}
